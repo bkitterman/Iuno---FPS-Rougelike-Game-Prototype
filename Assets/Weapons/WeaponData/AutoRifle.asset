@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb45a648ff4fdb40a6b713a3f83ce96, type: 3}
+  m_Name: AutoRifle
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponData
+  Name: Auto RIfle
+  Description: DEV INFO
+  WeaponType: 1
+  AmmoType: 1
+  IsAutomatic: 1
+  RoundsPerMinute: 600
+  Magazine: 33
+  AmmoReserve: 340
+  Damage: 10
+  Range: 200
+  ReloadTime: 2
+  AdsSpeed: 10
+  ProjectileSpeed: 1
+  AdsFov: 0
+  WeaponPrefab: {fileID: 2369467309521662143, guid: 1ad202ec551f35944810dd2e9d9a4d26, type: 3}
+  ProjectilePrefab: {fileID: 0}
+  IsMelee: 0
+  BulletSpreadAngle: 0.2
+  SpreadPerShotDeg: 0.1
+  SpreadMaxDeg: 2
+  SpreadRecoveryRate: 4
+  BulletMagnetismRadius: 0.2
+  RecoilVerticalPerShot: 0.6
+  RecoilHorizontalPerShot: 0.4
+  RecoilRecoverySpeed: 6
+  RecoilAccumulationMax: 2000
+  AdsSpreadMultiplier: 0.25
+  AdsRecoilMultiplier: 0.6
+  SwayAmount: 1

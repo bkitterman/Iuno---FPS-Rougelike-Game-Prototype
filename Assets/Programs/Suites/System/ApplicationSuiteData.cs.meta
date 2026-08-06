@@ -1,0 +1,12 @@
+fileFormatVersion: 2
+guid: d4c9143df9cdf17439b967d8bf0d3456
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - SuiteSprite: {fileID: 21300000, guid: 58a2673c68e733f49956b8dc8d63c14b, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

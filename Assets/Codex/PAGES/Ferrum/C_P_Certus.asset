@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49922f05034be6f4fa205a70b2ad0a2e, type: 3}
+  m_Name: C_P_Certus
+  m_EditorClassIdentifier: Assembly-CSharp::CodexPageData
+  Title: Certus
+  Version: 1.0.0
+  Icon: {fileID: 21300000, guid: 4c5c4487b087ffa40b1ead5735b3fd2d, type: 3}
+  TagLine: How many sides does a circle have?
+  ContentHeaders:
+  - Specifications
+  - Ability
+  - Lore Entry
+  Content:
+  - '**Rarity:** Common
+
+    **Suite:** Ferrum
+
+    **Memory Cost:** 0.33 GB
+
+    **Routine
+    Size**: 0.66 GB
+
+    **Storage Cost:** 3.99 GB
+
+    **Scaling:** Logarithmic'
+  - Reduce the angle of spread of bullets with diminishing returns
+  - '#TODO'

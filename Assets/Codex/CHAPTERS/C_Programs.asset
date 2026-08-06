@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 389845c7af8f2764193a60f57a1cea63, type: 3}
+  m_Name: C_Programs
+  m_EditorClassIdentifier: Assembly-CSharp::CodexChapterData
+  Title: Programs
+  Version: 1.0.0
+  Sections:
+  - {fileID: 11400000, guid: d06e97e686e8b7d42860eb965647e9d7, type: 2}
+  - {fileID: 11400000, guid: 4159a623e05b9834299ac2c58b7f3d8f, type: 2}
+  Page: {fileID: 11400000, guid: 7e2ba3760124f434c99d2748a78285e9, type: 2}

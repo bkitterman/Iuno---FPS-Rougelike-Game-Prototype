@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ddb45a648ff4fdb40a6b713a3f83ce96, type: 3}
+  m_Name: ScoutRifle
+  m_EditorClassIdentifier: Assembly-CSharp::WeaponData
+  Name: Scout Rifle
+  Description: DEV INFO
+  WeaponType: 1
+  AmmoType: 1
+  IsAutomatic: 0
+  RoundsPerMinute: 360
+  Magazine: 16
+  AmmoReserve: 148
+  Damage: 22
+  Range: 200
+  ReloadTime: 1.75
+  AdsSpeed: 10
+  ProjectileSpeed: 1
+  AdsFov: 0
+  WeaponPrefab: {fileID: 5385956312374818376, guid: f9c2e0d5b1319e6429eb198fbbdced91, type: 3}
+  ProjectilePrefab: {fileID: 0}
+  IsMelee: 0
+  BulletSpreadAngle: 0.1
+  SpreadPerShotDeg: 0.2
+  SpreadMaxDeg: 0.6
+  SpreadRecoveryRate: 6
+  BulletMagnetismRadius: 0.2
+  RecoilVerticalPerShot: 0.8
+  RecoilHorizontalPerShot: 0.2
+  RecoilRecoverySpeed: 6
+  RecoilAccumulationMax: 2000
+  AdsSpreadMultiplier: 0.2
+  AdsRecoilMultiplier: 0.5
+  SwayAmount: 0.75

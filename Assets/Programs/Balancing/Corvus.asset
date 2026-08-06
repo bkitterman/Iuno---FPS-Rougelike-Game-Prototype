@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 548441e29afd89e40b5113551a739e04, type: 3}
+  m_Name: Corvus
+  m_EditorClassIdentifier: Assembly-CSharp::ProgramData
+  ProgramName: Corvus
+  Version: 1.0.2
+  TagLine: Attempted Murder is just a lonely bird
+  PlainTextDescription: Chance to decrease enemy defense on hit
+  InDepthDescription: 1% chance on hit per stack to increase enemy damage taken
+  Multiplier: 0.01
+  RoutineScaling: 0
+  IsBuff: 1
+  Storage: 14
+  Memory: 6
+  RoutineSize: 0.1
+  EffectData: {fileID: 11400000, guid: f74fe9ca4b6c86649b5f40a5cdfe5e22, type: 2}
+  canBeOptimized: 1
+  OptimizedMultiplier: 0
+  OptimizedMemoryCost: 0
+  OptimizedRoutineCost: 0
+  OptimizedStorageCost: 0
+  id: 1
+  IconSprite: {fileID: 21300000, guid: a15d6c8a4b9b8124089fc38591adc76c, type: 3}
+  Rarity: {fileID: 11400000, guid: f450060304afc8c44b8a4736dce6e89e, type: 2}
+  ApplicationSuite: {fileID: 11400000, guid: 740f32217a413e74fa4ff89d851417d0, type: 2}

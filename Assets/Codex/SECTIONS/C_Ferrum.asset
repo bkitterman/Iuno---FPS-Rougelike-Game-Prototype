@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94227812c1fcc4842a5be795a2070d32, type: 3}
+  m_Name: C_Ferrum
+  m_EditorClassIdentifier: Assembly-CSharp::CodexSectionData
+  Title: Ferrum
+  Version: 1.0.0
+  Pages:
+  - {fileID: 11400000, guid: 40605c59458cc7c4fae412dee66c7400, type: 2}
+  - {fileID: 11400000, guid: 6c89253a4ffc48340a2ebedf730fdace, type: 2}
+  - {fileID: 11400000, guid: b7c187e663c568d43b8942e16a9ec813, type: 2}
+  - {fileID: 11400000, guid: 8f83f628bd2233244aa35386de1038f9, type: 2}
+  - {fileID: 11400000, guid: 4c9706f59417e2d4f8faafa8176e68d9, type: 2}
+  - {fileID: 11400000, guid: 562570b6e91987d4ba89b793ec5dee1d, type: 2}
+  - {fileID: 11400000, guid: b7ed688760eac1e4db245f68fc47a285, type: 2}
+  - {fileID: 11400000, guid: fd2763f6294c38f41bc09e7a2db3c51d, type: 2}
+  - {fileID: 11400000, guid: 0d2f79bf811f3b64e88d91fa581a3009, type: 2}
+  Page: {fileID: 11400000, guid: c97bba4e4bfe0be418942838c4c850b9, type: 2}

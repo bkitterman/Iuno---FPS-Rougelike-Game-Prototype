@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 548441e29afd89e40b5113551a739e04, type: 3}
+  m_Name: Ursus
+  m_EditorClassIdentifier: Assembly-CSharp::ProgramData
+  ProgramName: Ursus
+  Version: 1.0.2
+  TagLine: Sometime, playing dead is just playing stupid
+  PlainTextDescription: Increase health
+  InDepthDescription: Increase health by 10% per stack.
+  Multiplier: 0.1
+  RoutineScaling: 1
+  IsBuff: 1
+  Storage: 1
+  Memory: 0.25
+  RoutineSize: 0.1
+  EffectData: {fileID: 0}
+  canBeOptimized: 1
+  OptimizedMultiplier: 0
+  OptimizedMemoryCost: 0
+  OptimizedRoutineCost: 0
+  OptimizedStorageCost: 0
+  id: 5
+  IconSprite: {fileID: 21300000, guid: 2a96078c039caee4bae9bd4e7f8366c1, type: 3}
+  Rarity: {fileID: 11400000, guid: fcc51b7aa9404f145941bc83d739a0d9, type: 2}
+  ApplicationSuite: {fileID: 11400000, guid: 740f32217a413e74fa4ff89d851417d0, type: 2}

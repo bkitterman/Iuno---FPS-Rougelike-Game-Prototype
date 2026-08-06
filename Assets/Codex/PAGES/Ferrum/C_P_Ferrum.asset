@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49922f05034be6f4fa205a70b2ad0a2e, type: 3}
+  m_Name: C_P_Ferrum
+  m_EditorClassIdentifier: Assembly-CSharp::CodexPageData
+  Title: Ferrum
+  Version: 1.0.0
+  Icon: {fileID: 21300000, guid: 00ebeb2939df9454e9ed338f1c90c4bf, type: 3}
+  TagLine: 10,001 hours
+  ContentHeaders:
+  - Activation Criteria
+  - Ability
+  - Lore Entry
+  Content:
+  - Have at least 7 Ferrum Programs active in memory. The effect will then stay active.
+  - '**7 Programs:** Increase reload speed by 50% for 2 seconds after a kill.
+
+    **10
+    Programs:** Gain an additional 33% chance on reload after a kill to not consume
+    ammo for 3 seconds.'
+  - "I won't make you feel lesser by explaining what a gun is to you. Just know you
+    are still lesser. \n\nThe short version is: we thought guns were nice to give
+    you. So what if we made them stronger? Bullets hurt, sure. But magical bullets?
+    Ones you cant avoid? Physical and pyschological damage. best of both world.\n\nSo
+    yeah. Go do a crime or whatever. But your responsible for what you do with your
+    gun.\n\nMy advice? Aim away from yourself\n"

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4c9143df9cdf17439b967d8bf0d3456, type: 3}
+  m_Name: Ferrum
+  m_EditorClassIdentifier: Assembly-CSharp::ApplicationSuiteData
+  Name: Ferrum
+  Version: 2.0.1
+  TagLine: 10,001 hours
+  PlainTextDescription: 'Tier 1: Reduce reload speed for period after kill
+
+    Tier
+    2: Gain chance to not consume ammo after reload'
+  InDepthDescription: 'Tier 1: Reduce reload speed by 50% for 2 seconds after a kill
+
+    Tier
+    2: Gain 33% chance to not consume ammo for 3 seconds reload'
+  BonusTiers:
+  - RequiredPrograms: 7
+    EffectValue: 0
+    ModifierType: 0
+    Effect: {fileID: 11400000, guid: faa19f7e0e7c59d43932661ddea40a20, type: 2}
+  - RequiredPrograms: 9
+    EffectValue: 0
+    ModifierType: 0
+    Effect: {fileID: 11400000, guid: a1ebd873a77280845be291a19d735eb9, type: 2}
+  Id: 1
+  SuiteSprite: {fileID: 21300000, guid: 00ebeb2939df9454e9ed338f1c90c4bf, type: 3}
+  SuiteColor: {r: 0.63529414, g: 0.454902, b: 0.18039216, a: 1}

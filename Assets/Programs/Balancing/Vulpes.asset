@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 548441e29afd89e40b5113551a739e04, type: 3}
+  m_Name: Vulpes
+  m_EditorClassIdentifier: Assembly-CSharp::ProgramData
+  ProgramName: Vulpes
+  Version: 1.0.1
+  TagLine: If you can't dodge the consequences, make them dodge you
+  PlainTextDescription: Chance to dodge incoming damage on hit
+  InDepthDescription: Upon taking damage, there is a 1% chance to avoid the damage
+    and effects
+  Multiplier: 0.01
+  RoutineScaling: 0
+  IsBuff: 1
+  Storage: 8
+  Memory: 2
+  RoutineSize: 0.45
+  EffectData: {fileID: 0}
+  canBeOptimized: 1
+  OptimizedMultiplier: 0
+  OptimizedMemoryCost: 0
+  OptimizedRoutineCost: 0
+  OptimizedStorageCost: 0
+  id: 3
+  IconSprite: {fileID: 21300000, guid: 0643b2aa611ffdf428970467b5bedc4e, type: 3}
+  Rarity: {fileID: 11400000, guid: 4bcb34e6f18ca1940ac420ed5a28b1ba, type: 2}
+  ApplicationSuite: {fileID: 11400000, guid: 740f32217a413e74fa4ff89d851417d0, type: 2}

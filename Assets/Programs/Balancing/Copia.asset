@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 548441e29afd89e40b5113551a739e04, type: 3}
+  m_Name: Copia
+  m_EditorClassIdentifier: Assembly-CSharp::ProgramData
+  ProgramName: Copia
+  Version: 1.1.1
+  TagLine: Who doesn't like magically expanding containers?
+  PlainTextDescription: Increase magazine size
+  InDepthDescription: Increase magazine size by  +5 bullets per stack
+  Multiplier: 5
+  RoutineScaling: 0
+  IsBuff: 1
+  Storage: 3
+  Memory: 0.5
+  RoutineSize: 0.5
+  EffectData: {fileID: 0}
+  canBeOptimized: 1
+  OptimizedMultiplier: 0
+  OptimizedMemoryCost: 0
+  OptimizedRoutineCost: 0
+  OptimizedStorageCost: 0
+  id: 7
+  IconSprite: {fileID: 21300000, guid: be685648414e3174b9cb4c8b1f2d371f, type: 3}
+  Rarity: {fileID: 11400000, guid: f450060304afc8c44b8a4736dce6e89e, type: 2}
+  ApplicationSuite: {fileID: 11400000, guid: 75c20243ba5efec42a234859228d7c92, type: 2}

@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49922f05034be6f4fa205a70b2ad0a2e, type: 3}
+  m_Name: C_P_Lupa
+  m_EditorClassIdentifier: Assembly-CSharp::CodexPageData
+  Title: Lupa
+  Version: 1.0.0
+  Icon: {fileID: 21300000, guid: 24be851d769305345bbb2c93c1c95639, type: 3}
+  TagLine: You ever try just... Biting harder?
+  ContentHeaders:
+  - Costs
+  - Ability
+  - Optimization
+  - Lore Entry
+  Content:
+  - '**Rarity:** Common
+
+    **Suite:** Rapax
+
+    **Memory Cost:** 0.5 GB
+
+    **Routine
+    Size:** 0.1 GB
+
+    **Storage Cost:** 2 GB
+
+    **Scaling:** Linear'
+  - Increase all outgoing damage by +15% per stack. This includes all abilities,
+    weapons, programs, status effects, and accidentals.
+  - '**Memory Cost:** 0.2 GB
+
+    **Routine Size**: 0.05 GB
+
+    **Storage Cost:**
+    1.5 GB
+
+
+    Increase outgoing damage effect to +18% per stack.'
+  - ':// RECORDING 294-C - BEGIN PLAYBACK //:
+
+
+    "What if we could make bullets
+    hurt?"
+
+
+    "They already do."
+
+
+    "Okay but... Hurt more?"
+
+
+    "That''s
+    called a higher caliber."
+
+
+    "I can''t make bullets a higher caliber with
+    just code?"
+
+
+    "And you expect to make them hurt more with just code?"
+
+
+    "I
+    mean... I could always just increase the Frame''s weapon power draw in return
+    for higher bullet velocity..."
+
+
+    There was a long pause, followed by a very
+    long sigh. "To think the future of humanity could potentially rest on your shoulders."
+
+
+    "Only
+    if someone else messes us up, first."
+
+
+    "Yeah. That''ll help me sleep at
+    night."
+
+
+    :// END PLAYBACK //:'

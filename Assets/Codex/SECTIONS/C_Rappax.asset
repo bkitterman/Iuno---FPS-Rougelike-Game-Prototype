@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94227812c1fcc4842a5be795a2070d32, type: 3}
+  m_Name: C_Rappax
+  m_EditorClassIdentifier: Assembly-CSharp::CodexSectionData
+  Title: Rappax
+  Version: 1.0.0
+  Pages:
+  - {fileID: 11400000, guid: c073d47a7972ad2488bbaac31fd76a70, type: 2}
+  - {fileID: 11400000, guid: fb0c22b8f1f0a5946a1ab0083317a5c1, type: 2}
+  - {fileID: 11400000, guid: fa8db294a6f75f04db50652a77fc210f, type: 2}
+  - {fileID: 11400000, guid: 57b1284c673543541b60ea6a037ec562, type: 2}
+  - {fileID: 11400000, guid: f4b3eb8f52b21dd4481af918c3e98ed3, type: 2}
+  - {fileID: 11400000, guid: bba39891449381c4e93b94b6cbb66ee9, type: 2}
+  - {fileID: 11400000, guid: e26101c5c854c0843832995ec5da8cec, type: 2}
+  Page: {fileID: 11400000, guid: 1e1564e4336254443a2a14c56a2321aa, type: 2}

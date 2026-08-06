@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5f06b3c3e61800428585e896d744b11, type: 3}
+  m_Name: Memory-64gb
+  m_EditorClassIdentifier: Assembly-CSharp::MemoryData
+  Name: 64Gb
+  Description: Default Memory. Low cost, high volume.
+  Version: 1.0.0
+  Icon: {fileID: 0}
+  PowerDraw_W: 20
+  MemoryCapacity_GB: 64

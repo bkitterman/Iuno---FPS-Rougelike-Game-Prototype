@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c76cd4d2c6e6b94d986d0bc351f7d11, type: 3}
+  m_Name: ClusterGrenade
+  m_EditorClassIdentifier: Assembly-CSharp::ClusterGrenadeAbilityData
+  AbilityName: Cluster Grenade
+  ClassName: ClusterGrenade
+  PlainTextDescription: A gernade the explodes into smaller grenades
+  InDepthDescription: A grenade that explodes into four smaller grenades which deal
+    moderate damage.
+  Version: 1.0.0
+  charges: 1
+  Icon: {fileID: 21300000, guid: 78447f4bcee6ac84f9a8f18f0f2ee53e, type: 3}
+  Cooldown: 12
+  Value: 0
+  PowerDraw_W: 125
+  mainGrenadePrefab: {fileID: 7237755479988327462, guid: 56989a79da114d648bb4823ec7d90661, type: 3}
+  submunitionPrefab: {fileID: 7237755479988327462, guid: f2b9529b13f842a4d9f8792638d72f78, type: 3}
+  submunitionCount: 4
+  initialDelay: 0.5
+  submunitionDelay: 1
+  throwForce: 20
+  initialDamage: 10
+  initialRadius: 1.5
+  submunitionDamage: 50
+  submunitionRadius: 3
+  submunitionSpreadForce: 5

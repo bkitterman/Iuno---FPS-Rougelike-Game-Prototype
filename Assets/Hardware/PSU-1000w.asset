@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a43d42c358315534087152038d844d22, type: 3}
+  m_Name: PSU-1000w
+  m_EditorClassIdentifier: Assembly-CSharp::PSUData
+  Name: 1000w Silver
+  Description: A powerful but moderately inefficient PSU
+  Version: 1.0.1
+  Icon: {fileID: 0}
+  PowerDraw_W: 0
+  Certification: SILVER
+  PowerOutput_W: 1000

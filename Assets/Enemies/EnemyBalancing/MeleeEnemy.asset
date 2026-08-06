@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48cc15250b52453418033d01acf0dbff, type: 3}
+  m_Name: MeleeEnemy
+  m_EditorClassIdentifier: Assembly-CSharp::BasicMeleeEnemyData
+  enemyName: Simple Enemy
+  modelPrefab: {fileID: 7870753413708007810, guid: 57e26101940a1c048a40473a53c2e284, type: 3}
+  icon: {fileID: 21300000, guid: 6ca93523b0317c242b05932fedb07cb3, type: 3}
+  maxHealth: 75
+  moveSpeed: 4
+  range: 2
+  detectionRadius: 30
+  lineOfSightRange: 40
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 128
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 1
+  aiClassName: BasicEnemyAI
+  availableWeapons:
+  - {fileID: 11400000, guid: aad46e814a0443244b7a98ce6f789230, type: 2}
+  availableAbilities:
+  - {fileID: 11400000, guid: a365dac10561ad344a59d8a867360ce6, type: 2}
+  CanPatrol: 1
+  PatrolTime: 5
+  PatrolRadius: 15
+  SearchTime: 5
+  spawnCost: 5
+  LootTable: {fileID: 11400000, guid: 813e0096c38888941a7d8aeda0e7491a, type: 2}
+  attackRange: 2
+  attackCooldown: 1.5
+  attackDamage: 25
+  lungeSpeedMultiplier: 2
+  lungeDuration: 0.3

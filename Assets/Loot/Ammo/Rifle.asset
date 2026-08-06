@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df71d834e2f0e064cac86f8dc27a4daf, type: 3}
+  m_Name: Rifle
+  m_EditorClassIdentifier: Assembly-CSharp::AmmoData
+  Type: 1
+  BaseDropAmount: 25
+  DropVariance: 0.5
+  PickupPrefab: {fileID: 2908797318322069908, guid: e165c80aee669e243a7bd30c1b882c53, type: 3}

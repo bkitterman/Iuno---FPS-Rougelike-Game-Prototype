@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7142af3239631846bbdce82d8a94604, type: 3}
+  m_Name: Perfected
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyModifierData
+  Name: Perfected
+  Description: All stats increased drastically
+  Version: 1.0.0
+  Id: 0
+  EliteMaterial: {fileID: 2100000, guid: 228536331baf4004fbe6eb4940475cba, type: 2}
+  VfxPrefab: {fileID: 4510343480992047245, guid: 80bcbbfb292892c4d979cca776fceb7e, type: 3}
+  StatModifiers:
+  - TargetStat: 0
+    Value: 0.5
+    Type: 2
+  - TargetStat: 2
+    Value: 25
+    Type: 1
+  - TargetStat: 3
+    Value: 0.25
+    Type: 2
+  - TargetStat: 4
+    Value: 0.25
+    Type: 2

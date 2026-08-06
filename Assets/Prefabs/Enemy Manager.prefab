@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &988748565216398109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6958648573683369199}
+  - component: {fileID: 1707223264266455307}
+  - component: {fileID: 770294014679045526}
+  - component: {fileID: 7351653651869584862}
+  - component: {fileID: 473968280529280737}
+  m_Layer: 0
+  m_Name: Enemy Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6958648573683369199
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988748565216398109}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.61, y: 17.48, z: -20.48}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1707223264266455307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988748565216398109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a5ac11cc976e418e8d13136b07e1f52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.AI.Navigation::Unity.AI.Navigation.NavMeshSurface
+  m_SerializedVersion: 0
+  m_AgentTypeID: 0
+  m_CollectObjects: 0
+  m_Size: {x: 10, y: 10, z: 10}
+  m_Center: {x: 0, y: 2, z: 0}
+  m_LayerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  m_UseGeometry: 0
+  m_DefaultArea: 0
+  m_GenerateLinks: 0
+  m_IgnoreNavMeshAgent: 1
+  m_IgnoreNavMeshObstacle: 1
+  m_OverrideTileSize: 0
+  m_TileSize: 256
+  m_OverrideVoxelSize: 0
+  m_VoxelSize: 0.08
+  m_MinRegionArea: 2
+  m_NavMeshData: {fileID: 23800000, guid: 03a7763bf71d9b1448b376e10c707d1e, type: 2}
+  m_BuildHeightMesh: 0
+--- !u!114 &770294014679045526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988748565216398109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d848b11417f6f5b4d85f9a6bdb042dc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnManager
+  currentEncounter: {fileID: 11400000, guid: 1e7a30bfbb96409489232beb803abf97, type: 2}
+  minSpawnRange: 15
+  maxSpawnRange: 75
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  autoStartEncounter: 1
+  infiniteSpawning: 1
+  spawnPointRadius: 5
+  maxEnemiesAlive: 100
+  initialSpawnBudget: 100
+  budgetIncreaseRate: 2
+  minSpawnInterval: 5
+  maxSpawnInterval: 20
+  budgetToSpendPercent: 0.75
+  modifierDatabase: {fileID: 11400000, guid: 226bf003b467831479a8bddff14c5cfb, type: 2}
+  eliteChance: 0.05
+  difficultyIncreaseInterval: 180
+  difficultyMultiplier: 1.15
+  availableSpawnPoints: []
+  EncounterInProgress: 0
+--- !u!114 &7351653651869584862
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988748565216398109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ecead6261436a224b84717efd5255092, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  programDatabase: {fileID: 11400000, guid: 08a864b08c49da949a45058e05f41bcb, type: 2}
+  programPickupPrefab: {fileID: 3981890352626480367, guid: 2f4d752a31da884458aa7174028cd4b4, type: 3}
+  optimizedChance: 0.02
+--- !u!114 &473968280529280737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988748565216398109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652b67217b8a2014e99ca3552b4cf021, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AmmoManager
+  meleeDropMultiplier: 1.5
+  ammoDatabase: {fileID: 11400000, guid: efcf2ee31c06ef34b899a80fee291bc4, type: 2}
+  ammoPrefab: {fileID: 0}
