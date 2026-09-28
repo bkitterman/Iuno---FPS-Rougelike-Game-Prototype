@@ -137,7 +137,6 @@ public class EnemySpawnManager : MonoBehaviour
         }
         else
         {
-            // This is your original, wave-based logic
             if (currentEncounter.waves.Count == 0)
             {
                 Debug.LogError("Encounter data has no waves.");
@@ -191,7 +190,7 @@ public class EnemySpawnManager : MonoBehaviour
             float waitTime = Random.Range(minSpawnInterval, maxSpawnInterval);
             yield return new WaitForSeconds(waitTime);
 
-            // Check if we *can* spawn
+            // Check if we can spawn
             if (enemiesAlive < maxEnemiesAlive)
             {
                 // Decide how much budget to spend in this burst
@@ -223,7 +222,7 @@ public class EnemySpawnManager : MonoBehaviour
         // --- 2. Spawn Loop (Builds a squad) ---
         while (budgetRemaining > 0 && enemiesInThisBurst < maxEnemiesForBurst)
         {
-            // Re-check what we can afford with the remaining budget
+            // Re-check what it can afford with the remaining budget
             var currentlyAffordable = affordableEnemies.Where(e => e.spawnCost <= budgetRemaining).ToList();
             if (currentlyAffordable.Count == 0)
                 break; // Can't afford anything else
@@ -233,9 +232,9 @@ public class EnemySpawnManager : MonoBehaviour
             // 30% chance to pick the most expensive "leader" we can afford
             if (Random.value < 0.30f)
             {
-                enemyToSpawn = currentlyAffordable[0]; // [0] is most expensive
+                enemyToSpawn = currentlyAffordable[0];
             }
-            // 70% chance to pick any random "grunt" we can afford
+            // 70% chance to pick any random "grunt" it can afford
             else
             {
                 enemyToSpawn = currentlyAffordable[Random.Range(0, currentlyAffordable.Count)];
@@ -246,7 +245,7 @@ public class EnemySpawnManager : MonoBehaviour
             enemiesInThisBurst++;
         }
 
-        // We spent the budget, so remove it from the total
+        // Remove spent the budget
         currentSpawnBudget -= (budgetToSpend - budgetRemaining);
     }
 
@@ -315,10 +314,9 @@ public class EnemySpawnManager : MonoBehaviour
             EnemyModifierManager modifierManager = enemyObj.GetComponent<EnemyModifierManager>();
             if (modifierManager != null)
             {
-                // Pick a random modifier from the database
+                // Pick a random modifier from the database and apply
                 EnemyModifierData modifierToApply = modifierDatabase.allModifiers[Random.Range(0, modifierDatabase.allModifiers.Count)];
 
-                // Apply it!
                 modifierManager.ApplyModifier(modifierToApply);
                 Debug.Log($"A {modifierToApply.Name} is approaching!");
             }
@@ -350,7 +348,7 @@ public class EnemySpawnManager : MonoBehaviour
             }
 
             // 2. Line of Sight check (Do not spawn if player is looking straight at point
-            
+            // TODO
 
             // 3. Sort into lists based on the "sweet spot"
             if (distanceToPlayer <= maxSpawnRange)

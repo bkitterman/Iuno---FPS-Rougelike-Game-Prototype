@@ -46,6 +46,11 @@ public class DEV_ProgramSpawner : MonoBehaviour
                 pickup.Initialize(data);
                 pickup.IsPermanent = true;
 
+                if(pickup.programData.ProgramName == "Lupa")
+                {
+                    pickup.isOptimized = true;
+                }
+
                 currentPos.x += distanceBetweenPickups;
             }
 

@@ -20,12 +20,10 @@ public class MenuController : MonoBehaviour
 
     void OnEnable()
     {
-        weaponStudio.SetActive(true);
     }
 
     void OnDisable()
     {
-        weaponStudio.SetActive(false);
     }
 
     private void DeactivateAllTabs()
@@ -36,6 +34,7 @@ public class MenuController : MonoBehaviour
         osContent.SetActive(false);
         playerContent.SetActive(false);
         codexContent.SetActive(false);
+        weaponStudio.SetActive(false);
     }
 
     public void ShowSoftwareTab()
@@ -47,12 +46,14 @@ public class MenuController : MonoBehaviour
     public void ShowHardwareTab()
     {
         DeactivateAllTabs();
+        weaponStudio.SetActive(true); //TODO Remove later
         hardwareContent.SetActive(true);
     }
 
     public void ShowArmoryTab()
     {
         DeactivateAllTabs();
+        weaponStudio.SetActive(true);
         armoryContent.SetActive(true);
     }
 
