@@ -199,10 +199,10 @@ public class Gun : MonoBehaviour, IWeapon
         }
         else
         {
+            AmmoReserve -= (int)Player.Stats.MaxAmmo.GetValue() - CurrentAmmo;
             CurrentAmmo = (int)Player.Stats.MaxAmmo.GetValue();
-            AmmoReserve -= CurrentAmmo;
         }
-
+         
         PlayerState.SetReloading(false);
         GameEvents.ReportPlayerReload();
     }
