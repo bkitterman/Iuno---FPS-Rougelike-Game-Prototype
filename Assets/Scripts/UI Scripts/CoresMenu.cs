@@ -43,6 +43,7 @@ public class CoresMenu : MonoBehaviour
     private Image powerBlockerImage;
     private Image coresBackgroundBlockerImage;
 
+
     void Start()
     {
         // Calculate the closed position based on the drawer's height
@@ -84,23 +85,25 @@ public class CoresMenu : MonoBehaviour
 
     public void OnEnable()
     {
-        if (hardwareManager.EquippedCores.Count == 0) return;
-        for (int i = 0; i < 4; i++)
+        if (hardwareManager.EquippedCores.Count != 0)
         {
-            if (hardwareManager.EquippedCores[i] != null)
+            for (int i = 0; i < 4; i++)
             {
+                if (hardwareManager.EquippedCores[i] != null)
+                {
 
-                equippedHolders[i].Icon.color = new Color(1f, 1f, 1f, 1f);
-                equippedHolders[i].Icon.sprite = hardwareManager.EquippedCores[i].Icon;
-                equippedHolders[i].Name.text = hardwareManager.EquippedCores[i].Name;
-                equippedHolders[i].Data = hardwareManager.EquippedCores[i];
-                equippedHolders[i].Border.color = deactivatedHighlightColor;
-            }
-            else
-            {
-                equippedHolders[i].Icon.color = new Color(0f, 0f, 0f, 0f);
-                equippedHolders[i].Name.text = "Empty";
-                equippedHolders[i].Border.color = deactivatedHighlightColor;
+                    equippedHolders[i].Icon.color = new Color(1f, 1f, 1f, 1f);
+                    equippedHolders[i].Icon.sprite = hardwareManager.EquippedCores[i].Icon;
+                    equippedHolders[i].Name.text = hardwareManager.EquippedCores[i].Name;
+                    equippedHolders[i].Data = hardwareManager.EquippedCores[i];
+                    equippedHolders[i].Border.color = deactivatedHighlightColor;
+                }
+                else
+                {
+                    equippedHolders[i].Icon.color = new Color(0f, 0f, 0f, 0f);
+                    equippedHolders[i].Name.text = "Empty";
+                    equippedHolders[i].Border.color = deactivatedHighlightColor;
+                }
             }
         }
 
@@ -247,7 +250,6 @@ public class CoresMenu : MonoBehaviour
             if (skipIndexes.Contains(currentIndex))
             {
                 Instantiate(coreIconPrefab, allCoresGrid);
-
                 currentIndex++;
                 continue;
             }

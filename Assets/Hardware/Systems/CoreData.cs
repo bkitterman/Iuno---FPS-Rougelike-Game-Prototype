@@ -10,9 +10,3 @@ public class CoreData : HardwareData
     public List<StatusEffectData> StatusEffectPassiveBonuses;
 }
 
-[CreateAssetMenu(fileName = "CoreDatabase", menuName = "Database/Hardware/Core")]
-public class CoreDatabase : ScriptableObject
-{
-    [Header("Database List")]
-    public List<CoreData> CoreList;
-}

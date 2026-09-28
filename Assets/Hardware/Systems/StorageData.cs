@@ -8,9 +8,3 @@ public class StorageData : HardwareData
     public float StorageCapacity_GB = 1024f;
 }
 
-[CreateAssetMenu(fileName = "StorageDatabase", menuName = "Database/Hardware/Storage")]
-public class StorageDatabase : ScriptableObject
-{
-    [Header("Database List")]
-    public List<StorageData> StorageList;
-}

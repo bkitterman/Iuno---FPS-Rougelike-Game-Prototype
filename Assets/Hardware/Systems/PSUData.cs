@@ -11,10 +11,3 @@ public class PSUData : HardwareData
 
     //TODO Create tardeoff data here
 }
-
-[CreateAssetMenu(fileName = "PSUDatabase", menuName = "Database/Hardware/PSU")]
-public class PSUDatabase : ScriptableObject
-{
-    [Header("Database List")]
-    public List<PSUData> PSUList;
-}
