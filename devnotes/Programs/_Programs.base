@@ -1,0 +1,59 @@
+properties:
+  file.name:
+    displayName: Program
+views:
+  - type: table
+    name: Programs
+    filters:
+      and:
+        - file.inFolder("Iuno/Programs")
+        - '!file.name.startsWith("_")'
+        - Steps.isEmpty()
+    order:
+      - file.name
+      - ID
+      - Rarity
+      - Growth Type
+      - Description
+      - Application Suite
+    sort:
+      - property: Application Suite
+        direction: DESC
+      - property: ID
+        direction: ASC
+      - property: file.name
+        direction: ASC
+      - property: Description
+        direction: DESC
+      - property: Type
+        direction: ASC
+    columnSize:
+      file.name: 104
+      note.ID: 68
+      note.Rarity: 90
+      note.Growth Type: 112
+      note.Description: 334
+  - type: table
+    name: Suites
+    filters:
+      and:
+        - "!ID.isEmpty()"
+        - Rarity.isEmpty()
+    order:
+      - file.name
+      - ID
+      - Programs
+      - Description
+      - Steps
+    sort:
+      - property: Programs
+        direction: ASC
+      - property: Description
+        direction: ASC
+      - property: Steps
+        direction: ASC
+    columnSize:
+      file.name: 90
+      note.ID: 50
+      note.Programs: 105
+      note.Description: 407
