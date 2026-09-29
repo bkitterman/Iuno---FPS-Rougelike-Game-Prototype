@@ -41,7 +41,7 @@ public class ProgramDisplayController : MonoBehaviour
 
     public void UpdateDisplay(ProgramData kljlkjlk)
     {
-        // === Step 1: Cleanup ===
+        // --- Step 1: Cleanup ---
         foreach (ProgramData displayedData in _activeProgramIcons.Keys)
         {
             if (!player.ActivePrograms.Any(p => p.Data == displayedData))
@@ -106,7 +106,7 @@ public class ProgramDisplayController : MonoBehaviour
             bool suiteIsActive = player.IsSuiteActive(data.ApplicationSuite);
             currentSuiteGroup.SuiteIcon.color = suiteIsActive ? Color.white : new Color(0.5f, 0.5f, 0.5f, 0.75f);
 
-            // Now, handle the individual program icon
+            // individual program icon
             ProgramIcon_PrefabUI programIcon;
             if (!_activeProgramIcons.ContainsKey(data))
             {
@@ -122,7 +122,7 @@ public class ProgramDisplayController : MonoBehaviour
                 programIcon = _activeProgramIcons[data];
             }
 
-            // Crucially, ensure the icon is in the correct parent container
+            // ensure the icon is in the correct parent container
             programIcon.transform.SetParent(currentSuiteGroup.IconContainer);
             currentSuiteGroup.SuiteIcon.transform.SetAsLastSibling();
         }

@@ -10,15 +10,15 @@ public class TurretAI : MonoBehaviour
     private Transform playerToFollow;
 
     [Header("Aiming")] // Add this section
-    [SerializeField] private Transform turretHead; // OPTIONAL: Assign a part that visually rotates (e.g., the gun model)
+    [SerializeField] private Transform turretHead; // TODO: Assign a part that visually rotates (e.g., the gun model)
     [SerializeField] private float turnSpeed = 10f;
 
     // Internal state
     private float fireCooldownTimer;
     private Transform currentTarget;
-    [SerializeField] private LayerMask enemyMask; // Set this in the Inspector
-    [SerializeField] private Transform firePoint; // Assign the child object
-    [SerializeField] private GameObject projectilePrefab; // Assign a simple projectile
+    [SerializeField] private LayerMask enemyMask; 
+    [SerializeField] private Transform firePoint; 
+    [SerializeField] private GameObject projectilePrefab; 
     
     public void Initialize(float dmg, float rate, float rng, float spd, Transform player)
     {

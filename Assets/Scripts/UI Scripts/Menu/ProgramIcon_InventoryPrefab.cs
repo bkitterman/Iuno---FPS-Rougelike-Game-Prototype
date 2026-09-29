@@ -49,7 +49,6 @@ public class ProgramIcon_PrefabInventoryUI : MonoBehaviour, IBeginDragHandler, I
         }
     }
 
-    // ADD THIS NEW METHOD
     public void OnPointerClick(PointerEventData eventData)
     {
         if (eventData.button == PointerEventData.InputButton.Left)
@@ -66,7 +65,6 @@ public class ProgramIcon_PrefabInventoryUI : MonoBehaviour, IBeginDragHandler, I
     }
 
     // ----- DRAGGING -----
-
     public void OnBeginDrag(PointerEventData eventData)
     {
         // Show info

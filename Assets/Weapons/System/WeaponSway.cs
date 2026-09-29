@@ -19,7 +19,7 @@ public class WeaponSway : MonoBehaviour
     [Header("ADS Damping")]
     [SerializeField] private float adsMultiplier = 0.15f;
 
-    // These are the public values that your final animator script will read
+
     public Vector3 positionOffset { get; private set; }
     public Quaternion rotationOffset { get; private set; }
 

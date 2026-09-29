@@ -2,7 +2,7 @@
 - Project name: Iuno
 - Unity version: Unity 6000.4.2f1
 - Active game object:
-  - Name: Dummie Firing
-  - Tag: Dummie
-  - Layer: Enemy
+  - Name: Player
+  - Tag: Player
+  - Layer: Player
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->

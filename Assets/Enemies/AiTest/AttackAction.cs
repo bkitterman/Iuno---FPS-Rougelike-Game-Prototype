@@ -32,7 +32,7 @@ public partial class AttackAction : Action
 
     protected override Status OnUpdate()
     {
-        // --- 3. Perform the Action ---
+        // --- Perform the Action ---
         // Ensure enemy is stopped and facing target before attacking (important for melee)
         movement?.Stop();
         movement?.FaceTargetInstantly(targeting.CurrentTarget.position); // Ensure facing

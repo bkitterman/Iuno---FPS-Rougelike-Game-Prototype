@@ -33,7 +33,7 @@ public class LootManager : MonoBehaviour
         // 1. Roll for overall drop chance
         if (Random.value > table.overallDropChance)
         {
-            return; // Failed to drop anything
+            return; 
         }
 
         // 2. Roll for Rarity
@@ -68,7 +68,7 @@ public class LootManager : MonoBehaviour
     {
         // 1. Get all programs of the chosen rarity
         List<ProgramData> potentialPrograms = programDatabase.ProgramList
-            .Where(p => p.Rarity == rarity) // Assumes ProgramData has a 'Rarity' field
+            .Where(p => p.Rarity == rarity) 
             .ToList();
 
         if (potentialPrograms.Count == 0)
@@ -79,7 +79,7 @@ public class LootManager : MonoBehaviour
         // 2. Get player's current suite counts
         if (playerTransform == null) playerTransform = FindAnyObjectByType<Player>().transform;
         Player player = playerTransform.GetComponent<Player>();
-        var suiteCounts = player.GetActiveSuiteCounts(); // You'll need to create this helper
+        var suiteCounts = player.GetActiveSuiteCounts(); 
          
         // 3. Build a new weighted list for the final roll
         Dictionary<ProgramData, float> tunedProgramWeights = new Dictionary<ProgramData, float>();

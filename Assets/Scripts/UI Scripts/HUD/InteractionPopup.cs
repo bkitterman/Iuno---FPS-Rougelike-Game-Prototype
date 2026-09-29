@@ -5,9 +5,9 @@ using TMPro;
 
 public class InteractionPopup : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI keybindText; // Assign your "[E]" text
-    [SerializeField] private TextMeshProUGUI actionText; // Assign your action text
-    [SerializeField] private Slider holdProgressBar; // Assign your optional slider
+    [SerializeField] private TextMeshProUGUI keybindText; 
+    [SerializeField] private TextMeshProUGUI actionText; 
+    [SerializeField] private Slider holdProgressBar; 
     [SerializeField] private CanvasGroup canvasGroup;
     [SerializeField] private float fadeSpeed = 10f;
 
@@ -47,7 +47,6 @@ public class InteractionPopup : MonoBehaviour
     public void HidePrompt()
     {
         isVisible = false;
-        // Optionally, reset text immediately
         // keybindText.text = "";
         // actionText.text = "";
     }

@@ -126,7 +126,6 @@ public class InventoryManager : MonoBehaviour
     public void RefreshInventory()
     {
         // --- 1. Clear Old Icons ---
-        // Destroy all previously spawned icons before redrawing
         foreach (GameObject icon in spawnedIcons)
         {
             Destroy(icon);
@@ -135,7 +134,6 @@ public class InventoryManager : MonoBehaviour
 
         // --- 2. Spawn New Icons ---
         // Loop through every program in the player's Storage
-        // (Assuming Player has a list called player.Storage)
         foreach (var programInstance in player.StoredPrograms)
         {
             // Create a new icon from the prefab
@@ -325,14 +323,6 @@ public class InventoryManager : MonoBehaviour
         infoTagLine.text = data.TagLine;
         infoName.text = data.Name;
         infoDescription.text = data.PlainTextDescription;
-
-        // You could build a string of all programs in the suite
-        //string programsInSuite = "Programs:\n";
-        //foreach (var programName in data.ProgramNames)
-        //{
-        //    programsInSuite += $"- {programName}\n";
-        //}
-        //infoStats.text = programsInSuite;
     }
 
     // Status Bars
@@ -448,7 +438,7 @@ public class InventoryManager : MonoBehaviour
         }
         else
         {
-            // If the bar is not active, fade to zero
+            //fade to zero
             targetAlpha = 0f;
         }
 

@@ -30,7 +30,7 @@ public class ShoulderTurret : AbilityInstance
         durationTimer = turretData.duration;
 
         // --- Spawn the Turret ---
-        // Spawn slightly above and behind the player (adjust offset as needed)
+        // Spawn slightly above and behind the player
         Vector3 spawnPos = playerTransform.position + playerTransform.up * 1.5f - playerTransform.forward * -2f;
         currentTurretInstance = Object.Instantiate(turretData.turretPrefab, spawnPos, playerTransform.rotation);
 
@@ -43,7 +43,7 @@ public class ShoulderTurret : AbilityInstance
                 turretData.fireRate,
                 turretData.range,
                 turretData.projectileSpeed,
-                playerTransform // Give it a reference to follow the player
+                playerTransform 
             );
         }
     }

@@ -4,8 +4,8 @@ public class DamagePopupManager : MonoBehaviour
 {
     public static DamagePopupManager Instance;
 
-    [SerializeField] private GameObject damagePopupPrefab; // Assign your NEW UI prefab here
-    [SerializeField] private Transform canvasContainer;    // Assign your "Container" object from Bite 1
+    [SerializeField] private GameObject damagePopupPrefab;
+    [SerializeField] private Transform canvasContainer;    
 
     void Awake()
     {

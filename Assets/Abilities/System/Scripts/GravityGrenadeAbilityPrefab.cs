@@ -49,14 +49,12 @@ public class GravityGrenadePrefab : MonoBehaviour
         // Start the pull Coroutine
         StartCoroutine(PullEnemies());
 
-        // Spawn VFX/SFX for the impact/start of pull
         // 3. Spawn explosion VFX/SFX
         if (explosion != null)
         {
             // Create the explosion at the grenade's current position and with no rotation
             GameObject vfx = Instantiate(explosion, transform.position, Quaternion.identity);
 
-            // Pro-tip: Destroy the explosion effect after 5 seconds
             Destroy(vfx, pullDuration);
         }
 
@@ -99,7 +97,7 @@ public class GravityGrenadePrefab : MonoBehaviour
                     // Calculate direction towards the grenade center
                     Vector3 direction = (transform.position - hit.transform.position).normalized;
 
-                    //// Apply continuous force using Acceleration (ignores mass)
+                    // Apply continuous force using Acceleration (ignores mass)
                     enemyRb.AddForce(direction * pullForce, ForceMode.Acceleration);
 
                     // Apply damage if the tick timer is ready

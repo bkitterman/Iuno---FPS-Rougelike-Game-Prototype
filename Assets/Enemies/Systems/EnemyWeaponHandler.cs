@@ -104,7 +104,7 @@ public class EnemyWeaponHandler : MonoBehaviour
         CurrentWeapon = weaponInventory[currentWeaponIndex];
         CurrentWeapon.gameObject.SetActive(true);
 
-        // Optionally, inform the Brain/AI about the new weapon's properties (e.g., range)
+        // maybe inform the Brain/AI about the new weapon's properties (e.g., range)
         // brain.UpdateAttackParameters(CurrentWeapon.Data);
     }
 

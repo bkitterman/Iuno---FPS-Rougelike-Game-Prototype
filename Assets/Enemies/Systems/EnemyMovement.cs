@@ -33,7 +33,7 @@ public class EnemyMovement : MonoBehaviour
         // Configure other NavMeshAgent properties like acceleration, angularSpeed, stoppingDistance
         // Agent.acceleration = ...;
         // Agent.angularSpeed = ...;
-        // Agent.stoppingDistance = ...; // Could come from data or be set here
+        // Agent.stoppingDistance = ...; 
     }
 
     /// <summary>

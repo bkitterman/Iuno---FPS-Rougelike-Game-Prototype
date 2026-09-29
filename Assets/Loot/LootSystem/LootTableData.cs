@@ -21,12 +21,9 @@ public class LootTableData : ScriptableObject
     public float suiteBonusMultiplier = 1.5f;
 }
 
-// This simple class doesn't need its own file
 [System.Serializable]
 public class RarityDropChance
 {
-    // You'll need a public enum for this
-    // public enum ProgramRarity { Common, Uncommon, Rare, Legendary, Mythical }
     public RarityData rarity; 
-    public int weight; // e.g., Common = 100, Uncommon = 30, Rare = 10, Legendary = 3
+    public int weight; 
 }

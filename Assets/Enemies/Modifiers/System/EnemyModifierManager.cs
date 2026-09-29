@@ -74,8 +74,6 @@ public class EnemyModifierManager : MonoBehaviour
     }
 
     // --- HOOKS ---
-    // These methods are called by other components (Health, WeaponHandler)
-    // and pass the event to all active logic scripts.
     public float ProcessOnTakeDamage(float damageAmount, Vector3 damageSource)
     {
         float modifiedDamage = damageAmount;

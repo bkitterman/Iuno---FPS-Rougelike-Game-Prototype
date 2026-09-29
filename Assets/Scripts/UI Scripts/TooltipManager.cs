@@ -88,8 +88,8 @@ public class TooltipManager : MonoBehaviour
         tooltip.GetComponent<RectTransform>().pivot = pivot;
         tooltip.transform.position = targetPos + newOffset + offsetPos;
 
-        // Optional: Add logic to keep it on-screen
-        // ... (check if tooltipRect is outside canvasRect and flip position)
+        // todo: Add logic to keep it on-screen
+        // check if tooltipRect is outside canvasRect and flip position
     }
 
     private IEnumerator FadeTooltip(float targetAlpha)

@@ -86,7 +86,6 @@ public class GrenadePrefab : MonoBehaviour
             // Create the explosion at the grenade's current position and with no rotation
             GameObject vfx = Instantiate(explosion, transform.position, Quaternion.identity);
 
-            // Pro-tip: Destroy the explosion effect after 5 seconds
             Destroy(vfx, 5f);
         }
 

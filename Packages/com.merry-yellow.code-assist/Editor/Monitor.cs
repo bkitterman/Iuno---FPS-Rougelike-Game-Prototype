@@ -192,7 +192,7 @@ namespace Meryel.UnityCodeAssist.Editor
                 SetDirty(target);
             }
 
-            /return modifications;
+            return modifications;
         }
 
         //static void MyUndoCallback()

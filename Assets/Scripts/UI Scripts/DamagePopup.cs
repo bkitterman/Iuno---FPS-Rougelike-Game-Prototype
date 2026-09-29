@@ -71,7 +71,6 @@ public class DamagePopup : MonoBehaviour
         // Check if the target is behind the camera
         if (screenPos.z <= 0)
         {
-            // Target is behind the camera, make the popup invisible
             text.enabled = false;
         }
         else

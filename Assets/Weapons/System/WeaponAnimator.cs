@@ -44,24 +44,6 @@ public class WeaponAnimator : MonoBehaviour
         GameEvents.OnWeaponEquipped -= OnGunEquipEvent;
     }
 
-    //void OnGunEquipEvent(Gun gun)
-    //{
-    //    Debug.Log("Equipping");
-    //    equippedGun = gun;
-    //    sightTransform = gun.ADSPoint;
-
-    //    // 1. Calculate the rotational difference
-    //    Quaternion deltaRot = adsTarget.rotation * Quaternion.Inverse(sightTransform.rotation);
-    //    adsRot = deltaRot * baseLocalRot;
-
-    //    // 2. Calculate the positional difference
-    //    Vector3 deltaPos = adsTarget.position - sightTransform.position;
-    //    adsPos = baseLocalPos + weaponPivot.parent.InverseTransformVector(deltaPos);
-
-    //    Vector3 euler = adsRot.eulerAngles;
-    //    euler.z = 0f; // Manually set the Z-axis (roll) to 0
-    //    adsRot = Quaternion.Euler(euler);
-    //}
 
     void OnGunEquipEvent(IWeapon weapon)
     {

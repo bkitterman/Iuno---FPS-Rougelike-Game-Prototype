@@ -17,7 +17,6 @@ public class WeaponBob : MonoBehaviour
     [Header("ADS Damping")]
     [SerializeField] private float adsMultiplier = 0.15f;
 
-    // These are the public values that your final animator script will read
     public Vector3 positionOffset { get; private set; }
     public Quaternion rotationOffset { get; private set; }
 
@@ -71,13 +70,12 @@ public class WeaponBob : MonoBehaviour
             bobTimer += Time.deltaTime * speed;
 
             // Use Cos for horizontal (X) and Sin for vertical (Y)
-            // This creates a nice circular/figure-8 motion
             float xPos = Mathf.Cos(bobTimer) * amount;
             float yPos = Mathf.Abs(Mathf.Sin(bobTimer)) * amount;
 
             // Calculate rotational bob
             float xRot = Mathf.Abs(Mathf.Sin(bobTimer)) * pitchAmount;
-            float zRot = -Mathf.Cos(bobTimer) * rollAmount; // Use negative Cos for a nice roll
+            float zRot = -Mathf.Cos(bobTimer) * rollAmount; 
 
             pos = new Vector3(xPos, yPos, 0f);
             rot = Quaternion.Euler(xRot, 0f, zRot);

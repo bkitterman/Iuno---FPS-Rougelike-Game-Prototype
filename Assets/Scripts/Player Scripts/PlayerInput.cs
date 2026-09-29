@@ -130,16 +130,15 @@ public class PlayerInput : MonoBehaviour
         if (isHoldingInteract && currentLookTarget != null && currentLookTarget.IsHoldInteract)
         {
             holdTimer += Time.deltaTime;
-            // Update UI progress (already done in CheckForInteractable)
-            // promptUI.UpdateHoldProgress(holdTimer / currentLookTarget.holdDuration);
-
+            
             if (holdTimer >= currentLookTarget.HoldDuration)
             {
-                // Hold complete! Trigger interaction
+                // Trigger interaction
                 currentLookTarget.Interact();
                 isHoldingInteract = false; // Stop holding
                 holdTimer = 0f;
-                // Optionally hide prompt or give success feedback
+
+                // maybe: hide prompt or give success feedback
             }
         }
     }
