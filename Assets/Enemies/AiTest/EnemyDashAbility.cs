@@ -53,8 +53,6 @@ public class EnemyDashAbility : AbilityInstance
         }
 
         // Calculate Dash Velocity
-        // We use agent.speed as a base multiplier, plus the ability's value
-        // Or directly use Data.Value if it represents speed. Let's assume Data.Value is distance.
         float dashSpeed = Data.Value / dashDuration;
         dashVelocity = dashDirection * dashSpeed;
 
@@ -66,7 +64,7 @@ public class EnemyDashAbility : AbilityInstance
             agent.velocity = dashVelocity; // Apply the dash velocity directly
         }
 
-        // Optional: Play dash animation/VFX
+        // Play dash animation/VFX
     }
 
     public void AbilityUpdate()
@@ -82,9 +80,6 @@ public class EnemyDashAbility : AbilityInstance
         {
             if (dashTimer > 0)
             {
-                // The agent's velocity is already set, just tick the timer
-                // If agent.velocity doesn't work well, you can directly move transform:
-                // enemyTransform.position += dashVelocity * Time.deltaTime;
                 dashTimer -= Time.deltaTime;
             }
             else
@@ -93,9 +88,8 @@ public class EnemyDashAbility : AbilityInstance
                 // --- Give control back to NavMeshAgent ---
                 if (agent.enabled && agent.isOnNavMesh)
                 {
-                    agent.velocity = Vector3.zero; // Stop the dash velocity
-                    agent.isStopped = false; // Allow path following again
-                                             // The brain's Update loop will issue a new MoveTo command
+                    agent.velocity = Vector3.zero;
+                    agent.isStopped = false;
                 }
             }
         }

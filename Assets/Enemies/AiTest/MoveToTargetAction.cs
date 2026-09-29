@@ -76,22 +76,16 @@ public partial class MoveToTargetAction : Action
         // Check if the movement component has reached the destination
         if (movement.HasReachedDestination)
         {
-            // Successfully reached the target
             return Status.Success;
         }
         else
         {
-            // Still moving towards the target
             return Status.Running;
         }
     }
 
     protected override void OnEnd()
     {
-        // Optional: Clean up or reset state if needed
-        // For simple MoveTo, often nothing is needed here.
-        // If the node succeeded (reached destination), you might want to ensure
-        // the agent stops precisely if the next node doesn't immediately issue a new move.
         if (success)
         {
             movement?.Stop();

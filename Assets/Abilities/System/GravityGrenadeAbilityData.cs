@@ -11,5 +11,4 @@ public class GravityGrenadeAbilityData : AbilityData
     public float pullForce = 3f;
     public float throwForce = 20f;
     public float pullTime = 5f;
-    // You can add more stats here later, like "Damage," "Duration," "Range," etc.
 }

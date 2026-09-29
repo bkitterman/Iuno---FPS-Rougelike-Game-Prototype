@@ -10,5 +10,4 @@ public class GrenadeAbilityData : AbilityData
     public float radius = 5f;
     public float delay = 3f;
     public float throwForce = 20f;
-    // You can add more stats here later, like "Damage," "Duration," "Range," etc.
 }

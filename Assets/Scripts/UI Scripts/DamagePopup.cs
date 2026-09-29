@@ -11,7 +11,7 @@ public class DamagePopup : MonoBehaviour
     private RectTransform rectTransform;
     private Camera mainCamera;
 
-    // --- We now have two "targets" ---
+    // --- Targets ---
     private Transform followTarget;     // For moving enemies (DoTs)
     private Vector3 staticWorldPos;   // For static hit points
     private Vector3 randomOffset;

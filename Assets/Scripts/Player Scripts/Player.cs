@@ -52,7 +52,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Check if we collided with a program pickup
+        // Check if player collided with a program pickup
         ProgramPickup program = other.gameObject.GetComponent<ProgramPickup>();
  
         if (program != null)
@@ -62,7 +62,7 @@ public class Player : MonoBehaviour
         
         }
 
-        // Check if we collided with an ammo pickup
+        // Check if player collided with an ammo pickup
         AmmoPickup ammo = other.gameObject.GetComponent<AmmoPickup>();
         if (ammo != null)
         {
@@ -177,7 +177,7 @@ public class Player : MonoBehaviour
         }
         ActiveSuites.Clear();
 
-        // 4. Check each suite we have and apply the highest met tier bonus
+        // 4. Check each suite player has and apply the highest met tier bonus
         foreach (var suitePair in _suiteCounts)
         {
             var suiteData = suitePair.Key;

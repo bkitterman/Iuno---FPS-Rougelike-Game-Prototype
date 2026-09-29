@@ -70,7 +70,7 @@ public class EnemyMeleeWeapon : EnemyWeaponInstance
 
         foreach (Collider hit in hits)
         {
-            // Ensure we haven't already damaged this target in this swing
+            // Prevent double damage to the same target in one swing
             if (alreadyDamaged.Contains(hit.gameObject)) continue;
 
             PlayerHealth playerHealth = hit.GetComponent<PlayerHealth>();

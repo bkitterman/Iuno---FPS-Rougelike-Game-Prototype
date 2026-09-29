@@ -64,10 +64,10 @@ public class EnemyTargeting : MonoBehaviour
                             .Select(t => t.transform)
                             .ToList();
 
-        // If we don't have a current target, try to pick the closest valid one
+        // If enemy doesn't have a current target, try to pick the closest valid one
         if (CurrentTarget == null && potentialTargets.Count > 0)
         {
-            // Find the first potential target that we have LoS to
+            // Find the first potential target that enemy has LoS to
             foreach (Transform potential in potentialTargets)
             {
                 if (CheckLineOfSight(potential))

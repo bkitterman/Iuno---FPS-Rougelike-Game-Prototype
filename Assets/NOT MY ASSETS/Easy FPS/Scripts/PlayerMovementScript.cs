@@ -138,10 +138,7 @@ public class PlayerMovementScript : MonoBehaviour {
 		}
 
 	}
-	/*
-	* Raycasts down to check if we are grounded along the gorunded method() because if the
-	* floor is curvy it will go ON/OFF constatly this assures us if we are really grounded
-	*/
+
 	private bool RayCastGrounded(){
 		RaycastHit groundedInfo;
 		if(Physics.Raycast(transform.position, transform.up *-1f, out groundedInfo, 1, ~ignoreLayer)){

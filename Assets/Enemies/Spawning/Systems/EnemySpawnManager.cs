@@ -190,7 +190,7 @@ public class EnemySpawnManager : MonoBehaviour
             float waitTime = Random.Range(minSpawnInterval, maxSpawnInterval);
             yield return new WaitForSeconds(waitTime);
 
-            // Check if we can spawn
+            // Check if it can spawn
             if (enemiesAlive < maxEnemiesAlive)
             {
                 // Decide how much budget to spend in this burst
@@ -205,7 +205,7 @@ public class EnemySpawnManager : MonoBehaviour
     {
         float budgetRemaining = budgetToSpend;
         int enemiesInThisBurst = 0;
-        int maxEnemiesForBurst = maxEnemiesAlive - enemiesAlive; // How many can we spawn?
+        int maxEnemiesForBurst = maxEnemiesAlive - enemiesAlive; // How many can it spawn?
 
         // --- 1. Build Spawn Pool ---
         var affordableEnemies = infiniteSpawnPool
@@ -229,7 +229,7 @@ public class EnemySpawnManager : MonoBehaviour
 
             EnemyData enemyToSpawn = null;
 
-            // 30% chance to pick the most expensive "leader" we can afford
+            // 30% chance to pick the most expensive "leader" it can afford
             if (Random.value < 0.30f)
             {
                 enemyToSpawn = currentlyAffordable[0];

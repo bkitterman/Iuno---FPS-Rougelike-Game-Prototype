@@ -192,8 +192,7 @@ namespace Meryel.UnityCodeAssist.Editor
                 SetDirty(target);
             }
 
-            // here, you can perform processing of the recorded modifications before returning them
-            return modifications;
+            /return modifications;
         }
 
         //static void MyUndoCallback()

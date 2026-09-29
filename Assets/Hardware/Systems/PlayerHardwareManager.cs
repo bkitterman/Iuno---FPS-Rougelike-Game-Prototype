@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-[RequireComponent(typeof(Player))] // Or StatsController, wherever stats live
+[RequireComponent(typeof(Player))] 
 public class PlayerHardwareManager : MonoBehaviour
 {
     [Header("Component References")]
@@ -49,13 +49,12 @@ public class PlayerHardwareManager : MonoBehaviour
     }
 
     /// <sSummary>
-    /// This is the public method your "Hardware" UI will call.
+    /// This is the public method "Hardware" UI will call.
     /// </summary>
     public void SwapHardware(HardwareData newHardware, int index = 0)
     {
         if (newHardware == null) return;
 
-        // Use 'is' pattern matching to check the type and equip it
         if (newHardware is PSUData newPSU)
         {
             EquippedPSU = newPSU;
@@ -102,8 +101,7 @@ public class PlayerHardwareManager : MonoBehaviour
             return (totalPowerDraw / EquippedPSU.PowerOutput_W);
         return totalPowerDraw;
 
-        // ... (Add power draw for equipped abilities, weapon later) ...
-
+        //TODO Add power draw for equipped abilities, weapon later
 
         // TODO: Add logic to shut down components if totalPowerDraw > totalPowerOutput
         // For now, we assume it's all powered.

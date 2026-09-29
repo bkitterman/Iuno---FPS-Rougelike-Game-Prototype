@@ -125,8 +125,7 @@ public class PlayerMovement : MonoBehaviour
             float slopeAngle = Vector3.Angle(Vector3.up, groundNormal);
 
             // 2. Apply Gravity/Slope Acceleration
-            // Instead of projecting the *velocity*, we calculate a separate acceleration vector.
-            if (slopeAngle > 0 && slopeAngle < controller.slopeLimit)
+             if (slopeAngle > 0 && slopeAngle < controller.slopeLimit)
             {
                 // This vector points DOWN the slope
                 Vector3 slopeDownDirection = Vector3.ProjectOnPlane(Vector3.down, groundNormal).normalized;
@@ -159,7 +158,7 @@ public class PlayerMovement : MonoBehaviour
             momentumVelocity = Vector3.Lerp(momentumVelocity, Vector3.zero, momentumDrag * Time.deltaTime);
 
             // Blend momentum with input
-            // If player is inputting movement, we blend that in, but keep the high speed
+            // If player is inputting movement, blend that in, but keep the high speed
             Vector3 inputVelocity = slopeMoveDir * moveSpeed;
 
             // If momentum has slowed down to walk speed, switch back to normal control
@@ -168,19 +167,13 @@ public class PlayerMovement : MonoBehaviour
                 isMomentumActive = false;
             }
 
-            // While momentum is active, we use the momentum vector
-            // But we allow the player to "steer" slightly by adding input
+            // While momentum is active, use the momentum vector
             controller.Move((momentumVelocity + (inputVelocity * 0.2f)) * Time.deltaTime);
         }
         else
         {
 
             // Sprinting only allowed on ground
-            //float speed;
-            //if (playerState.IsCrouching) speed = crouchSpeed;
-            //else if (playerState.IsSprinting) speed = sprintSpeed;
-            //else speed = moveSpeed;
-
             float speed = player.Stats.MoveSpeed.GetValue();
             
             // Regular grounded/air control

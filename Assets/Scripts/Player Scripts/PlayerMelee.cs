@@ -45,7 +45,7 @@ public class PlayerMelee : MonoBehaviour
 
     private void DetectAndDamage()
     {
-        // A list to track enemies we've already hit in this single punch
+        // A list to track enemies player has already hit in this single punch
         List<GameObject> hitEnemies = new List<GameObject>();
 
         // Fire a sphere forward from the camera's position
@@ -53,17 +53,15 @@ public class PlayerMelee : MonoBehaviour
 
         foreach (RaycastHit hit in hits)
         {
-            // Check if we hit an enemy and haven't already hit it in this swing
+            // Check if player hit an enemy and haven't already hit it in this swing
             Hitbox enemyHealth = hit.collider.GetComponent<Hitbox>();
             if (enemyHealth != null && !hitEnemies.Contains(enemyHealth.transform.parent.gameObject))
             {
                 // Get the player's current damage from the stats system
                 float damage = statsController.WeaponDamage.GetValue() * statsController.AllDamageMultiplier.GetValue();
 
-                // Apply damage
                 enemyHealth.TakeDamage(this.gameObject.transform,damage, hit.point, true, false);
 
-                // Report the damage event for our Programs to use
                 GameEvents.ReportMeleeDamageDealt(enemyHealth.transform.parent.gameObject, damage, camTransform.forward);
 
                 // Add to the list to prevent hitting the same enemy multiple times

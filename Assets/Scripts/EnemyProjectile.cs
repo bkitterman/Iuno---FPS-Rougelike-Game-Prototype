@@ -36,7 +36,7 @@ public class EnemyProjectile : MonoBehaviour
                 return;
             }
         }
-        // Check if we hit the player
+        // Check if enemy hit the player
         PlayerHealth playerHealth = other.GetComponent<PlayerHealth>();
         if (playerHealth != null)
         {
@@ -53,8 +53,7 @@ public class EnemyProjectile : MonoBehaviour
             return;
         }
 
-        // If we hit anything else (like a wall), just destroy the projectile
-        // (but not other projectiles or triggers)
+        // Destroy projectile if it hits any other object that is not a trigger
         if (!other.isTrigger)
         {
             Destroy(gameObject);

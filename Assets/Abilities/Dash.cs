@@ -33,7 +33,7 @@ public class Dash : AbilityInstance
             if (CooldownRemaining <= 0f)
             {
                 CurrentCharges++;
-                // If we are still missing charges, start the cooldown for the next one
+                // If still missing charges, start the cooldown for the next one
                 if (CurrentCharges < Data.charges)
                 {
                     CooldownRemaining = Data.Cooldown;
